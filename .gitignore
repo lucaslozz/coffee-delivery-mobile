@@ -33,3 +33,23 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Yarn
+yarn.lock
+
+# Ruby / CocoaPods
+**/Pods/
+/vendor/bundle/
+/ios/Podfile.lock
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
