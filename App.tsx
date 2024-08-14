@@ -1,12 +1,11 @@
-import { ThemeProvider } from "@shopify/restyle";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { theme } from "./src/theme/theme";
+import {ThemeProvider} from '@shopify/restyle';
+import {theme} from '@theme';
+import {SplashScreen} from '@screens';
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <View />
+      <SplashScreen />
     </ThemeProvider>
   );
 }
