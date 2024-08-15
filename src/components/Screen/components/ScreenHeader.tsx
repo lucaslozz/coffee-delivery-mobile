@@ -4,6 +4,8 @@ import {useNavigation} from '@react-navigation/native';
 
 import {ScreenProps} from '../Screen';
 import {Box, BoxProps, TouchableOpacityBox} from '~/components/Box/Box';
+import {Icon} from '~/components/Icon/Icon';
+import {Text} from '~/components/Text/Text';
 
 type ScreenHeaderProps = Pick<
   ScreenProps,
@@ -37,7 +39,7 @@ export function ScreenHeader({
           onPress={navigation.goBack}>
           <Icon size={ICON_SIZE} name="arrowLeft" color="primary" />
           {showBackLabel && (
-            <Text preset="paragraphMedium" semiBold marginLeft="s8">
+            <Text preset="paragraphMedium" marginLeft="s8">
               Voltar
             </Text>
           )}

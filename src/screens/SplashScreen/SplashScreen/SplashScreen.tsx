@@ -1,5 +1,13 @@
-import {Box} from '@components';
+import {Box, Icon, Screen, Text} from '@components';
 
 export function SplashScreen() {
-  return <Box backgroundColor="GRAY_100" flex={1} />;
+  return (
+    <Screen>
+      <Icon name="shopCart" />
+      <Text>
+        Welcome to the Splash Screen. This screen is shown when the app is
+        launched.
+      </Text>
+    </Screen>
+  );
 }

@@ -1,11 +1,16 @@
 import {ThemeProvider} from '@shopify/restyle';
 import {theme} from '@theme';
-import {SplashScreen} from '@screens';
+
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+
+import {Router} from '@routes';
 
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <SplashScreen />
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider theme={theme}>
+        <Router />
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
