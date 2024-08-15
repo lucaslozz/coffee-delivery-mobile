@@ -2,7 +2,7 @@ import {
   TouchableOpacity,
   TouchableOpacityProps as RNTouchableOpacityProps,
   PressableProps,
-} from "react-native";
+} from 'react-native';
 
 import {
   createBox,
@@ -17,8 +17,9 @@ import {
   BorderProps,
   spacingShorthand,
   SpacingShorthandProps,
-} from "@shopify/restyle";
-import { Theme } from "../../theme/theme";
+} from '@shopify/restyle';
+import {Theme} from '../../theme/theme';
+import Animated from 'react-native-reanimated';
 
 export const Box = createBox<Theme>();
 export type BoxProps = React.ComponentProps<typeof Box>;
@@ -36,11 +37,13 @@ export const TouchableOpacityBox = createRestyleComponent<
   Theme
 >(
   [backgroundColor, spacing, spacingShorthand, layout, border],
-  TouchableOpacity
+  TouchableOpacity,
 );
 
 export type PressableBoxProps = PressableProps & RestyleTypes;
 export const PressableBox = createRestyleComponent<PressableBoxProps, Theme>(
   [backgroundColor, spacing, spacingShorthand, layout, border],
-  TouchableOpacity
+  TouchableOpacity,
 );
+
+export const AnimatedBox = Animated.createAnimatedComponent(Box);

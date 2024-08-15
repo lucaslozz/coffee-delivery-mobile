@@ -1,30 +1,30 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
-import { createTheme } from "@shopify/restyle";
+import {createTheme} from '@shopify/restyle';
 
 export const palette = {
-  WHITE: "#FFFFFF",
+  WHITE: '#FFFFFF',
 
-  YELLOW: "#DBAC2C",
-  YELLOW_DARK: "#C47F17",
+  YELLOW: '#DBAC2C',
+  YELLOW_DARK: '#C47F17',
 
-  PURPLE: "#8047F8",
-  PURPLE_LIGHT: "#EBE5F9",
-  PURPLE_DARK: "#4B2995",
+  PURPLE: '#8047F8',
+  PURPLE_LIGHT: '#EBE5F9',
+  PURPLE_DARK: '#4B2995',
 
-  RED: "#E8BAAB",
-  RED_DARK: "#C44117",
-  RED_LIGHT: "#F2DFD8",
+  RED: '#E8BAAB',
+  RED_DARK: '#C44117',
+  RED_LIGHT: '#F2DFD8',
 
-  GRAY_100: "#272221",
-  GRAY_200: "#403937",
-  GRAY_300: "#574F4D",
-  GRAY_400: "#8D8686",
-  GRAY_500: "#D7D5D5",
-  GRAY_600: "#E6E5E5",
-  GRAY_700: "#EDEDED",
-  GRAY_800: "#F3F2F2",
-  GRAY_900: "#FAFAFA",
+  GRAY_100: '#272221',
+  GRAY_200: '#403937',
+  GRAY_300: '#574F4D',
+  GRAY_400: '#8D8686',
+  GRAY_500: '#D7D5D5',
+  GRAY_600: '#E6E5E5',
+  GRAY_700: '#EDEDED',
+  GRAY_800: '#F3F2F2',
+  GRAY_900: '#FAFAFA',
 };
 
 export const theme = createTheme({
@@ -58,6 +58,7 @@ export const theme = createTheme({
     s8: 8,
     s12: 12,
     s16: 16,
+    s100: 100,
   },
 
   textVariants: {
@@ -67,10 +68,10 @@ export const theme = createTheme({
 
 export const $shadowProps: ViewStyle = {
   elevation: 10,
-  shadowColor: "#000",
+  shadowColor: '#000',
   shadowOpacity: 0.05,
   shadowRadius: 12,
-  shadowOffset: { width: 0, height: -3 },
+  shadowOffset: {width: 0, height: -3},
 };
 export type Theme = typeof theme;
-export type ThemeColors = keyof Theme["colors"];
+export type ThemeColors = keyof Theme['colors'];
