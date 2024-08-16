@@ -9,8 +9,7 @@ export function SplashScreen() {
     <Screen
       backgroundColor="PURPLE_DARK"
       alignItems="center"
-      justifyContent="center"
-      statusBarProps={{hidden: true}}>
+      justifyContent="center">
       <AnimatedBox style={[rStyle]} backgroundColor="PURPLE" />
 
       <AnimatedBox position="absolute" flexDirection="row" gap="s14">

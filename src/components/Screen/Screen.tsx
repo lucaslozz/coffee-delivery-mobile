@@ -20,7 +20,7 @@ export interface ScreenProps extends BoxProps {
   scrollable?: boolean;
   title?: string;
   noPaddingHorizontal?: boolean;
-  statusBarProps?: StatusBarProps;
+  statusBarColor?: StatusBarStyle;
 }
 
 export function Screen({
@@ -31,7 +31,7 @@ export function Screen({
   noPaddingHorizontal = false,
   title,
   style,
-  statusBarProps,
+  statusBarColor = 'dark-content',
   ...boxProps
 }: ScreenProps) {
   const {top, bottom} = useAppSafeArea();
@@ -44,8 +44,7 @@ export function Screen({
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <Container backgroundColor={colors.background}>
         <StatusBar
-          {...statusBarProps}
-          barStyle={'dark-content'}
+          barStyle={statusBarColor}
           translucent
           backgroundColor="transparent"
         />
