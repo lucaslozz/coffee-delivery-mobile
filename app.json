@@ -6,11 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.coffedeliverymobile"
@@ -22,8 +17,6 @@
       },
       "package": "com.coffedeliverymobile"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [["react-native-bootsplash", {"assetsDir": "assets/bootsplash"}]]
   }
 }

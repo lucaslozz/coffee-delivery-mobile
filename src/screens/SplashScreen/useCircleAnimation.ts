@@ -10,7 +10,7 @@ import {
 const screenWidth = Dimensions.get('screen').width;
 const screenHeight = Dimensions.get('screen').height;
 
-const circleDiameter = Math.sqrt(screenWidth ** 2 + screenHeight ** 2);
+const circleDiameter = Math.sqrt(screenWidth ** 2 + screenHeight ** 2) * 1.5;
 
 export const useCircleAnimation = () => {
   const scale = useSharedValue(0);

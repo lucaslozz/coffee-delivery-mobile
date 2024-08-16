@@ -19,6 +19,8 @@
 		D6F099532C6D870B00C41FC8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6F099502C6D870B00C41FC8 /* Roboto-Bold.ttf */; };
 		D6F099542C6D870B00C41FC8 /* Baloo2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6F099512C6D870B00C41FC8 /* Baloo2-Bold.ttf */; };
 		D6F099552C6D870B00C41FC8 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6F099522C6D870B00C41FC8 /* Roboto-Regular.ttf */; };
+		681130D7555F4F2FA5BDAE0B /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E95208E595470C8D932BF7 /* BootSplash.storyboard */; };
+		7376865185A04741B6CE9AC4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D5826E652F437C908EAA8D /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		D6F099522C6D870B00C41FC8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-coffedeliverymobile/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		99E95208E595470C8D932BF7 /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "coffedeliverymobile/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0D5826E652F437C908EAA8D /* Colors.xcassets */ = {isa = PBXFileReference; name = "Colors.xcassets"; path = "coffedeliverymobile/Colors.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				1931BCA8B026419CB838EB2E /* noop-file.swift */,
 				B4E386C6A47543DAAC4804C6 /* coffedeliverymobile-Bridging-Header.h */,
 				A07510C1C9D0A12402D96AE5 /* PrivacyInfo.xcprivacy */,
+				99E95208E595470C8D932BF7 /* BootSplash.storyboard */,
+				A0D5826E652F437C908EAA8D /* Colors.xcassets */,
 			);
 			name = coffedeliverymobile;
 			sourceTree = "<group>";
@@ -224,6 +230,8 @@
 				D6F099532C6D870B00C41FC8 /* Roboto-Bold.ttf in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				1DFB4A4B48E8E9478E1B7F03 /* PrivacyInfo.xcprivacy in Resources */,
+				681130D7555F4F2FA5BDAE0B /* BootSplash.storyboard in Resources */,
+				7376865185A04741B6CE9AC4 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +380,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coffedeliverymobile;
-				PRODUCT_NAME = coffedeliverymobile;
+				PRODUCT_NAME = "coffedeliverymobile";
 				SWIFT_OBJC_BRIDGING_HEADER = "coffedeliverymobile/coffedeliverymobile-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -403,7 +411,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coffedeliverymobile;
-				PRODUCT_NAME = coffedeliverymobile;
+				PRODUCT_NAME = "coffedeliverymobile";
 				SWIFT_OBJC_BRIDGING_HEADER = "coffedeliverymobile/coffedeliverymobile-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
