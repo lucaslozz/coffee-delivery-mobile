@@ -1,4 +1,4 @@
-package com.coffedeliverymobile
+package com.coffeedeliverymobile
 import com.zoontek.rnbootsplash.RNBootSplash
 
 import android.os.Build

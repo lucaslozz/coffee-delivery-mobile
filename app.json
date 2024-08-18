@@ -1,21 +1,21 @@
 {
   "expo": {
-    "name": "coffe-delivery-mobile",
-    "slug": "coffe-delivery-mobile",
+    "name": "coffee-delivery-mobile",
+    "slug": "coffee-delivery-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.coffedeliverymobile"
+      "bundleIdentifier": "com.coffeedeliverymobile"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.coffedeliverymobile"
+      "package": "com.coffeedeliverymobile"
     },
     "plugins": [["react-native-bootsplash", {"assetsDir": "assets/bootsplash"}]]
   }

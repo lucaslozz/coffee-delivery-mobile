@@ -19,8 +19,10 @@
       "@brand": ["src/brand"],
       "@types": ["src/@types"],
       "@model": ["src/model"],
+      "@modules": ["src/modules"],
       "@adapter": ["src/adapter"],
       "@data": ["src/data"],
+      "@repository": ["src/repository"],
       "@test": ["src/test"],
       "test-utils": ["src/test/test-utils"]
     }

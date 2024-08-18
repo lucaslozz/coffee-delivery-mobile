@@ -1,4 +1,4 @@
-package com.coffedeliverymobile
+package com.coffeedeliverymobile
 
 import android.app.Application
 import android.content.res.Configuration

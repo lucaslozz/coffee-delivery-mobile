@@ -22,6 +22,8 @@ module.exports = function (api) {
             '@model': './src/model',
             '@adapter': './src/adapter',
             '@data': './src/data',
+            '@modules': './src/modules',
+            '@repository': './src/repository',
           },
         },
       ],
