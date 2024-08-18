@@ -11,13 +11,13 @@ export function Router() {
 
   const runSplashScreen = () => {
     RNBootSplash.hide({fade: true}).finally(() => {
-      setTimeout(() => setInitApp(true), 1000);
+      setTimeout(() => setInitApp(true), 1700);
     });
   };
 
   return (
     <NavigationContainer onReady={runSplashScreen}>
-      {initApp ? <SplashScreen /> : <SplashScreen />}
+      {initApp ? <AppStack /> : <SplashScreen />}
     </NavigationContainer>
   );
 }
