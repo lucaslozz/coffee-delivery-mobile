@@ -18,6 +18,9 @@
       "@infra": ["src/infra"],
       "@brand": ["src/brand"],
       "@types": ["src/@types"],
+      "@model": ["src/model"],
+      "@adapter": ["src/adapter"],
+      "@data": ["src/data"],
       "@test": ["src/test"],
       "test-utils": ["src/test/test-utils"]
     }

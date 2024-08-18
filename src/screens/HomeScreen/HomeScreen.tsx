@@ -1,9 +1,10 @@
 import {Box, Screen, Text} from '@components';
+import {Favorites} from './components';
 
 export function HomeScreen() {
   return (
     <Screen>
-      <Text>HomeScreen</Text>
+      <Favorites />
     </Screen>
   );
 }
