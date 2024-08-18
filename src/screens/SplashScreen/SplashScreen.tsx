@@ -1,9 +1,10 @@
 import {AnimatedBox, Screen} from '@components';
-import {useCircleAnimation} from './useCircleAnimation';
+import {useSplashScreenAnimation} from './useSplashScreenAnimation';
 import {LogoIcon, RocketCoffeeIcon} from '@brand';
 
 export function SplashScreen() {
-  const {rStyle} = useCircleAnimation();
+  const {rStyle, positionLogoStyle, positionRocketLogoStyle} =
+    useSplashScreenAnimation();
 
   return (
     <Screen
@@ -13,9 +14,11 @@ export function SplashScreen() {
       <AnimatedBox style={[rStyle]} backgroundColor="PURPLE" />
 
       <AnimatedBox position="absolute" flexDirection="row" gap="s14">
-        <RocketCoffeeIcon />
+        <AnimatedBox style={positionRocketLogoStyle}>
+          <RocketCoffeeIcon />
+        </AnimatedBox>
 
-        <AnimatedBox>
+        <AnimatedBox style={positionLogoStyle}>
           <LogoIcon />
         </AnimatedBox>
       </AnimatedBox>

@@ -17,7 +17,7 @@ export function Router() {
 
   return (
     <NavigationContainer onReady={runSplashScreen}>
-      {initApp ? <AppStack /> : <SplashScreen />}
+      {initApp ? <SplashScreen /> : <SplashScreen />}
     </NavigationContainer>
   );
 }
