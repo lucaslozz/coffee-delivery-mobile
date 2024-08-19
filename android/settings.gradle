@@ -44,7 +44,7 @@ if (getRNMinorVersion() >= 75) {
   }
 }
 
-rootProject.name = 'coffee-delivery-mobile'
+rootProject.name = 'Coffee Delivery'
 
 dependencyResolutionManagement {
   versionCatalogs {
