@@ -1,40 +1,43 @@
 module.exports = {
   root: true,
-  extends: ["universe/native"],
-  plugins: ["import", "unused-imports"],
+  extends: [
+    'universe/native',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
+  ],
+  plugins: ['import', '@tanstack/query', 'unused-imports'],
   overrides: [
     {
-      files: ["*.ts", "*.tsx"],
+      files: ['*.ts', '*.tsx'],
       rules: {
-        "@typescript-eslint/no-unused-vars": "error",
-        "unused-imports/no-unused-imports-ts": "error",
-        "import/order": [
-          "error",
+        '@typescript-eslint/no-unused-vars': 'error',
+        'unused-imports/no-unused-imports-ts': 'error',
+        'import/order': [
+          'error',
           {
-            groups: ["external", "builtin", "internal", "parent", "sibling"],
+            groups: ['external', 'builtin', 'internal', 'parent', 'sibling'],
             pathGroups: [
               {
-                pattern: "react+(|-native)",
-                group: "external",
-                position: "before",
+                pattern: 'react+(|-native)',
+                group: 'external',
+                position: 'before',
               },
               {
-                pattern: "@+(routes|screens|components|hooks|theme)",
-                group: "internal",
-                position: "before",
+                pattern: '@+(routes|screens|components|hooks|theme)',
+                group: 'internal',
+                position: 'before',
               },
               {
-                pattern: "./",
-                group: "internal",
-                position: "before",
+                pattern: './',
+                group: 'internal',
+                position: 'before',
               },
             ],
-            pathGroupsExcludedImportTypes: ["react+(|-native)"],
+            pathGroupsExcludedImportTypes: ['react+(|-native)'],
             alphabetize: {
-              order: "asc",
+              order: 'asc',
               caseInsensitive: true,
             },
-            "newlines-between": "always",
+            'newlines-between': 'always',
           },
         ],
       },
