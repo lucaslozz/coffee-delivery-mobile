@@ -67,6 +67,6 @@ export const $fontSizes: Record<TextVariants, TextStyle> = {
 };
 
 export const $fontFamily = {
-  bold: 'Ballo2-Bold',
+  bold: 'Baloo2-Bold',
   regular: 'Roboto-Regular',
 };

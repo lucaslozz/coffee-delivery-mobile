@@ -1,5 +1,14 @@
-import {Box} from '~/components';
+import {Box, FavoriteCard} from '@components';
+import {Coffee} from '@domain';
 
-export function Favorites() {
-  return <Box />;
+interface FavoritesProps {
+  favoriteList: Coffee[];
+}
+
+export function Favorites({favoriteList}: FavoritesProps) {
+  return (
+    <Box>
+      <FavoriteCard coffee={favoriteList[0]} />
+    </Box>
+  );
 }
