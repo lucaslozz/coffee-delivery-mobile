@@ -1,13 +1,13 @@
 import {CoffeeRepository} from './coffeeRepositoryModel';
 
-import {Coffee} from '../coffee.model';
+import {Coffee, CoffeeApi} from '../coffee.model';
 import {coffeeData} from '~/data';
 import {coffeeAdapter} from '../coffeeAdapter';
 
 async function getList(): Promise<Coffee[]> {
   // return await storage.getItem<Coffee[]>(StorageKeys['@CoffeeList']);
 
-  const response = await new Promise<Coffee[]>(resolve =>
+  const response = await new Promise<CoffeeApi[]>(resolve =>
     setTimeout(() => resolve(coffeeData.coffeeList), 200),
   );
 

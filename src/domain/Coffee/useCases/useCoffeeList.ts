@@ -13,9 +13,8 @@ export function useCoffeeList({getList}: Props) {
     queryFn: getList,
     staleTime: 1000 * 15,
   });
-
   return {
-    coffeeList: query.data,
+    coffeeList: query.data?.slice(0, 5),
     isError: query.isError,
     isLoading: query.isLoading,
   };

@@ -25,6 +25,8 @@ export const palette = {
   GRAY_700: '#EDEDED',
   GRAY_800: '#F3F2F2',
   GRAY_900: '#FAFAFA',
+
+  TRANSPARENT: 'transparent',
 };
 
 export const theme = createTheme({
@@ -55,9 +57,11 @@ export const theme = createTheme({
   },
   borderRadii: {
     s4: 4,
+    s6: 6,
     s8: 8,
     s12: 12,
     s16: 16,
+    s36: 36,
     s100: 100,
   },
 

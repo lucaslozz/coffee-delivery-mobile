@@ -1,10 +1,15 @@
 import {currencyUtils} from '@utils';
-import {Coffee} from './coffee.model';
+import {Coffee, CoffeeApi} from './coffee.model';
 
-function toCoffee(coffee: Coffee): Coffee {
+function toCoffee(coffee: CoffeeApi): Coffee {
+  const toTag: Record<CoffeeApi['category'], Coffee['category']> = {
+    special: 'especial',
+    sweet: 'doce',
+    traditional: 'tradicional',
+  };
   return {
-    price: currencyUtils.formatCurrency(coffee.price),
-    category: coffee.category,
+    price: currencyUtils.formatCurrency(coffee.price ?? ''),
+    category: toTag[coffee.category],
     description: coffee.description,
     id: coffee.id,
     image: coffee.image,

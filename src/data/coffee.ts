@@ -1,6 +1,6 @@
-import {Coffee} from '@model';
+import {CoffeeApi} from '~/domain';
 
-const coffeeList: Coffee[] = [
+const coffeeList: CoffeeApi[] = [
   {
     id: 0,
     category: 'traditional',

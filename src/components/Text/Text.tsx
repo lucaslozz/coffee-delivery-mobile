@@ -12,6 +12,7 @@ type SRTextProps = ComponentProps<typeof SRText>;
 export interface TextProps extends SRTextProps {
   preset?: TextVariants;
   bold?: boolean;
+  normalBold?: boolean;
 }
 
 export function Text({
@@ -19,10 +20,10 @@ export function Text({
   children,
   style,
   bold,
-
+  normalBold,
   ...textProps
 }: Readonly<TextProps>) {
-  const fontFamily = getFontFamily(bold);
+  const fontFamily = getFontFamily(bold, normalBold);
 
   return (
     <SRText
@@ -34,10 +35,12 @@ export function Text({
   );
 }
 
-function getFontFamily(bold?: boolean) {
+function getFontFamily(bold?: boolean, normalBold?: boolean) {
   switch (true) {
     case bold:
       return $fontFamily.bold;
+    case normalBold:
+      return $fontFamily.normalBold;
     default:
       return $fontFamily.regular;
   }
@@ -68,5 +71,6 @@ export const $fontSizes: Record<TextVariants, TextStyle> = {
 
 export const $fontFamily = {
   bold: 'Baloo2-Bold',
+  normalBold: 'Roboto-Bold',
   regular: 'Roboto-Regular',
 };
