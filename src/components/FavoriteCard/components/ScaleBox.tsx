@@ -2,6 +2,7 @@ import {SharedValue} from 'react-native-reanimated';
 import {AnimatedBox, Box, BoxProps} from '~/components/Box/Box';
 import {useScale} from '../animations/useScale';
 import {StyleProp, ViewStyle} from 'react-native';
+import {scaleUtils} from '~/utils';
 
 interface ScaleBoxProps {
   children: React.ReactNode;

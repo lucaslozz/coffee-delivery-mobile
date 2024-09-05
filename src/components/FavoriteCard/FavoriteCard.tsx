@@ -4,11 +4,7 @@ import {Text} from '../Text/Text';
 import {Tag} from '../Tag/Tag';
 import {Image, useAnimatedValue} from 'react-native';
 import {scaleUtils} from '~/utils';
-import {
-  interpolate,
-  SharedValue,
-  useAnimatedStyle,
-} from 'react-native-reanimated';
+import {SharedValue} from 'react-native-reanimated';
 import {ScaleBox} from './components/ScaleBox';
 
 interface FavoriteCardProps {
@@ -32,9 +28,12 @@ export function FavoriteCard({
       boxProps={$wrapper}>
       <Image
         source={coffee.image}
-        width={120}
-        height={120}
-        style={{marginTop: scaleUtils.vertical(-30), marginBottom: 12}}
+        style={{
+          marginTop: scaleUtils.vertical(-30),
+          marginBottom: 12,
+          width: 120,
+          height: 120,
+        }}
       />
       <Tag text={coffee?.category} preset="marked" />
       <Text

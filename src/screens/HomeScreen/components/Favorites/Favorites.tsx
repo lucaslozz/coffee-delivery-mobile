@@ -1,14 +1,14 @@
-import {Box, FavoriteCard} from '@components';
+import {AnimatedBox, Box, FavoriteCard} from '@components';
 import {Coffee} from '@domain';
-import {useEffect, useState} from 'react';
-import {Dimensions, FlatList, ListRenderItemInfo} from 'react-native';
+
+import {Dimensions, ListRenderItemInfo} from 'react-native';
 import Animated, {
-  runOnJS,
-  useAnimatedReaction,
+  SlideInRight,
   useAnimatedScrollHandler,
-  useDerivedValue,
   useSharedValue,
+  ZoomInRight,
 } from 'react-native-reanimated';
+import {scaleUtils} from '~/utils';
 
 interface FavoritesProps {
   favoriteList: Coffee[];
@@ -36,8 +36,9 @@ export function Favorites({favoriteList}: FavoritesProps) {
   }
 
   return (
-    <Box>
+    <AnimatedBox entering={ZoomInRight.duration(500)}>
       <Animated.FlatList
+        entering={SlideInRight.duration(600)}
         keyExtractor={item => item?.id?.toString() ?? ''}
         contentContainerStyle={{
           paddingHorizontal: FAVORITE_LIST_PADDING,
@@ -52,6 +53,6 @@ export function Favorites({favoriteList}: FavoritesProps) {
         showsHorizontalScrollIndicator={false}
         pagingEnabled
       />
-    </Box>
+    </AnimatedBox>
   );
 }
