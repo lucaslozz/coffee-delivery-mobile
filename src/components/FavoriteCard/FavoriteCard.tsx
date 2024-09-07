@@ -1,9 +1,9 @@
 import {Coffee} from '@domain';
-import {AnimatedBox, Box, BoxProps} from '../Box/Box';
+import {Box, BoxProps} from '../Box/Box';
 import {Text} from '../Text/Text';
 import {Tag} from '../Tag/Tag';
-import {Image, useAnimatedValue} from 'react-native';
-import {scaleUtils} from '~/utils';
+import {Image} from 'react-native';
+
 import {SharedValue} from 'react-native-reanimated';
 import {ScaleBox} from './components/ScaleBox';
 
@@ -29,13 +29,14 @@ export function FavoriteCard({
       <Image
         source={coffee.image}
         style={{
-          marginTop: scaleUtils.vertical(-30),
+          marginTop: -40,
           marginBottom: 12,
           width: 120,
           height: 120,
         }}
       />
       <Tag text={coffee?.category} preset="marked" />
+
       <Text
         textAlign="center"
         bold
@@ -44,6 +45,7 @@ export function FavoriteCard({
         marginTop="s16">
         {coffee?.name}
       </Text>
+
       <Text
         textAlign="center"
         preset="paragraphExtraSmall"

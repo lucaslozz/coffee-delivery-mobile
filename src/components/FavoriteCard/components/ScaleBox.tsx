@@ -9,6 +9,7 @@ interface ScaleBoxProps {
   positionX: SharedValue<number>;
   cardIndex: number;
   cardSize: number;
+
   boxProps: BoxProps;
 }
 
@@ -26,7 +27,13 @@ export function ScaleBox({
   });
 
   return (
-    <AnimatedBox style={[scaleStyle]} width={cardSize} {...boxProps}>
+    <AnimatedBox
+      style={[scaleStyle]}
+      width={cardSize}
+      height={267}
+      flex={1}
+      alignContent="flex-end"
+      {...boxProps}>
       {children}
     </AnimatedBox>
   );

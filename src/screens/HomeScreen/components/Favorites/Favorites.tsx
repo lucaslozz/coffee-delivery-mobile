@@ -1,4 +1,4 @@
-import {AnimatedBox, Box, FavoriteCard} from '@components';
+import {AnimatedBox, FavoriteCard} from '@components';
 import {Coffee} from '@domain';
 
 import {Dimensions, ListRenderItemInfo} from 'react-native';
@@ -8,13 +8,13 @@ import Animated, {
   useSharedValue,
   ZoomInRight,
 } from 'react-native-reanimated';
-import {scaleUtils} from '~/utils';
 
 interface FavoritesProps {
   favoriteList: Coffee[];
 }
 
 const CARD_SIZE = 208;
+
 const FAVORITE_LIST_PADDING = (Dimensions.get('window').width - CARD_SIZE) / 2;
 
 export function Favorites({favoriteList}: FavoritesProps) {
@@ -36,7 +36,7 @@ export function Favorites({favoriteList}: FavoritesProps) {
   }
 
   return (
-    <AnimatedBox entering={ZoomInRight.duration(500)}>
+    <AnimatedBox entering={ZoomInRight.duration(600)}>
       <Animated.FlatList
         entering={SlideInRight.duration(600)}
         keyExtractor={item => item?.id?.toString() ?? ''}
