@@ -1,4 +1,4 @@
-import {AnimatedBox, FavoriteCard} from '@components';
+import {AnimatedBox} from '@components';
 import {Coffee} from '@domain';
 
 import {Dimensions, ListRenderItemInfo} from 'react-native';
@@ -8,6 +8,7 @@ import Animated, {
   useSharedValue,
   ZoomInRight,
 } from 'react-native-reanimated';
+import {FavoriteCard} from './components';
 
 interface FavoritesProps {
   favoriteList: Coffee[];

@@ -9,7 +9,7 @@ function toCoffee(coffee: CoffeeApi): Coffee {
   };
   return {
     price: currencyUtils.formatCurrency(coffee.price ?? ''),
-    category: toTag[coffee.category],
+    category: coffee.category ? toTag[coffee.category] : 'tradicional',
     description: coffee.description,
     id: coffee.id,
     image: coffee.image,

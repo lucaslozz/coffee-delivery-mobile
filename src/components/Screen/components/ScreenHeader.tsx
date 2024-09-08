@@ -3,9 +3,10 @@ import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 
 import {ScreenProps} from '../Screen';
-import {Box, BoxProps, TouchableOpacityBox} from '~/components/Box/Box';
+import {Box, BoxProps} from '~/components/Box/Box';
 import {Icon} from '~/components/Icon/Icon';
 import {Text} from '~/components/Text/Text';
+import {TouchableOpacityBox} from '~/components/TouchableOpacityBox/TouchableOpacityBox';
 
 type ScreenHeaderProps = Pick<
   ScreenProps,

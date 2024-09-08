@@ -1,7 +1,6 @@
 import {Coffee} from '@domain';
-import {Box, BoxProps} from '../Box/Box';
-import {Text} from '../Text/Text';
-import {Tag} from '../Tag/Tag';
+import {BoxProps, Tag, Text} from '@components';
+
 import {Image} from 'react-native';
 
 import {SharedValue} from 'react-native-reanimated';
